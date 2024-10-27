@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="calculator-form">
+            <div class="header">
+                <h1 class="title">CARBON<br>OFFSET </h1>
+                <p class="subtitle">Calculate your environmental footprint</p>
+            </div>
+
+            <div class="step-content">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="prev-btn" class="btn btn-outline" disabled>Previous</button>
+                <button id="next-btn" class="btn btn-primary">Next</button>
+            </div>
+        </div>
+
+        <div class="results" id="results">
+            <div class="carbon-result">
+                <span id="total-carbon">0</span>
+                <span class="carbon-unit">kg CO₂e/week</span>
+            </div>
+
+            <div class="tips-card">
+                <h3 class="tips-title">How to Reduce Your Impact</h3>
+                <ul class="tips-list">
+                    <li>Consider using public transport or cycling for shorter journeys</li>
+                    <li>Switch to energy-efficient appliances and LED bulbs</li>
+                    <li>Try incorporating more plant-based meals into your diet</li>
+                </ul>
+            </div>
+
+            <button id="recalculate-btn" class="btn btn-outline" style="width: 100%">
+                Calculate Again
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
